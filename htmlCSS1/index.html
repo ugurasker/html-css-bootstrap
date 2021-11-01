@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | TABLO EKLE | CSS Inline</title>
+ <style>
+/* css kodlari burda calisir */
+/* css selector ile istenilen html elemani sekillendirilebilir.*/
+/*style ile yapilan stillendirme sadece bu dosya icin gecerlidir*/
+/* tum proje icin gecerli style istersek harici bir .css dosyasi 
+olusturup , htmle import etmek gerekir*/
+/* yildiz (*) herseyi kapsayan komutlar */
+*{
+    text-align: center;
+    }
+h1{color: green;
+font-size: 25px ;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-top: 50px;
+}
+p{
+    color: blue;
+}
+#p1 {
+    color: blueviolet;
+}
+.p2 {color: aqua;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: left;
+}
+
+ </style>
+</head>
+<body>
+    <h1>TABLO EKLEME</h1>
+    <h1>CSS stillendirme</h1>
+    <!-- id bir css selectordur ve tek element stillendirilecekse
+    kullanmak mantiklidir. id ye erisim icin # kullanilir -->
+    <!-- HtML, CSS isimlendirme yapilirken kebap-case kullanilir -->
+    <p id="p1">Bu bir paragratir</p>
+    <!-- class selector ise grup stillendirme icindir.  erisim icin 
+        . kullanilir
+    -->
+    <p class="p2">Bu da ikincisi</p>
+    <p>CSS HTML'e gore daha detaylidir</p>
+</body>
+</html>

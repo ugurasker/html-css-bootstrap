@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * Bootstrap'i lokalden çalıştırmak için Boostrap indirerek dosyaları proje dosyamıza (Örneğin assets/lib klasörüne) ekleyebiliriz. Sonrasında ise aşağıdaki gibi bootstrap.min.css dosyasına link verebiliriz. -->
+    <!--? Ayrıca sayfanın en sonuna doğru Bootstrap JS kodlarını da kullanamk istersek <script> etiketi ile ana js kodunu eklememiz gerekir. -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.css"
+      />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Display</title>
+  </head>
+  <body>
+      <div class="container">
+        <h1 class="display-3 text-center text-info">DISPLAY</h1>
+      <!-- ** Aynı CSS'de olduğu gibi Bootstrap ile de nesnelerin display özellikleri 
+     değiştirilebilir. Display classları hakkında ayrıntılı bilgi için 
+      ! https://getbootstrap.com/docs/5.0/utilities/display/ -->
+        <div class="container text-center">
+            <div class="d-sm-none bg-danger ">1</div>
+            <div class="d-none d-sm-block bg-warning">2</div>
+            <div class="d-none d-md-block d-lg-none bg-info">3</div>
+            <div class="d-md-none d-lg-block bg-danger">4</div>
+            <div class="d-none d-md-block bg-info">5</div>
+        </div>
+    </div>
+    <!-- ? fixed-top sayfanın üzerine fixed-bottom ise sayfanın altına nesneleri yapıştırır.
+    ? Ayrıntılı bilgi için 
+    ! https://getbootstrap.com/docs/4.0/utilities/position/ -->
+    <!-- ** margin ve padding hakkında ayrıntılı bilgi için
+      ! https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
+      <div class="container d-flex justify-content-between mt-3 bg-dark text-light p-2 fixed-bottom mb-4">
+        <div>
+            <i class="fas fa-phone-alt text-warning mt-1"></i>
+        <span class="d-none d-md-inline">+905555555</span>
+        <i class="fab fa-whatsapp ms-3 text-warning"></i>
+        <span class="d-none d-md-inline">+905555555</span>
+       </div>
+
+       <div> 
+        <i class="fab fa-twitter text-info mx-2"></i>
+        <i class="fab fa-youtube text-info mx-2"></i>
+        <i class="fab fa-instagram text-info mx-2"></i>
+        <span class="d-none d-lg-inline">#techproed</span>
+
+       </div>
+
+      </div>
+
+
+
+ 
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
